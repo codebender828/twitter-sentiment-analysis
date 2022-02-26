@@ -14,7 +14,7 @@ print(f"\n========== SPARK STARTED ===========\n")
 
 def processTweet(tweet):
 
-    # Here, you should implement:
+    # Here, we implement:
     # (i) Sentiment analysis,
     # (ii) Get data corresponding to place where the tweet was generate (using geopy or googlemaps)
     # (iii) Index the data using Elastic Search
@@ -37,7 +37,6 @@ def processTweet(tweet):
             sentiment = "positive"
 
         # (ii) Get geolocation (state, country, lat, lon, etc...) from rawLocation
-
         print("\n\n=========================\ntweet: ", tweet)
         print("Raw location from tweet status: ", rawLocation)
         geolocator = Nominatim(user_agent="Tweetanalysis")
