@@ -2,11 +2,15 @@
 
 This project is an assignment for the Big Data Analytics class. It involves the use of Elasticache, Spark, Logstache and Kibana to perform sentiment analysis on data gathered from Twitter.
 
-Course: Big Data Analytics
-Student number: 1820162048
-Name: 乔纳森 Bakebwa Jonathan Mugaju
-Github: https://github.com/codebender828
-Contact: +8615510170074
+> Course: Big Data Analytics
+> 
+> Student number: 1820162048
+> 
+> Name: 乔纳森 Bakebwa Jonathan Mugaju
+> 
+> Github: https://github.com/codebender828
+> 
+> Contact: +8615510170074
 
 ## Getting started
 This project uses docker to orchestrate the containers. Use the following command to start the environment.
