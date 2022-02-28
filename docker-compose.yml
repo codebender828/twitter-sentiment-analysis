@@ -59,7 +59,7 @@ services:
       - "5000:5000/tcp"
       - "5000:5000/udp"
       - "9600:9600"
-      - "7890:7890"
+      # - "7890:7890"
     environment:
       LS_JAVA_OPTS: -Xmx256m -Xms256m
       LOGSTASH_INTERNAL_PASSWORD: ${LOGSTASH_INTERNAL_PASSWORD:-}
@@ -84,13 +84,13 @@ services:
     depends_on:
       - elasticsearch
 
-  spark:
-    build:
-      context: spark
-    networks:
-      - elk
-    depends_on:
-      - elasticsearch
+  # spark:
+  #   build:
+  #     context: spark
+  #   networks:
+  #     - elk
+  #   depends_on:
+  #     - elasticsearch
 
 networks:
   elk:

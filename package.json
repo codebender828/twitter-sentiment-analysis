@@ -1,0 +1,17 @@
+{
+  "name": "docker-elk-twitter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/codebender828/twitter-sentiment-analysis",
+  "author": "codebender828 <jbakebwa@163.com>",
+  "license": "MIT",
+  "dependencies": {
+    "https-proxy-agent": "^5.0.0",
+    "logstash": "^4.1.1",
+    "node-tweet-stream": "^2.1.0",
+    "twit": "^2.2.11",
+    "twitter": "^1.7.1",
+    "twitter-api-v2": "^1.11.0",
+    "twitter-v2": "^1.1.0"
+  }
+}

@@ -2,7 +2,8 @@ import socket
 import re
 import preprocessor as p
 import tweepy
-
+# CLIENT_TOKEN=LXpxdFlEcXl2ZE8zRUhGRHZpcWg6MTpjaQ
+# CLIENT_SECRET=W_q6QDLQuiT2dAWsha0LsM2bfdZPhrqCfETfgY6wCuonA5-AHN
 CONSUMER_KEY = 'RtpiFow5QzWkuHB0V2tmaQCJp'
 CONSUMER_SECRET = 'KPIVyvG8ld0kA8HaI4JDiZUndfR8MdegnNuNLin7xq1y0TZNTn'
 # BEARER_TOKEN = 'AAAAAAAAAAAAAAAAAAAAAFfWXgEAAAAAmVZvm0rXB75r8KJ4UxndVSqDB3Y%3DVXfF3OwXRnT9QFTMn66taWtFBIKK98ZB9lwFB1wZCeCiUYeqNk'
@@ -101,5 +102,6 @@ class MyStreamListener(tweepy.Stream):
 
 
 # myStream = tweepy.Stream(auth=api.auth, listener=MyStreamListener)
-myStream = MyStreamListener(consumer_key=CONSUMER_KEY, consumer_secret=CONSUMER_SECRET, access_token=ACCESS_TOKEN, access_token_secret=ACCESS_SECRET)
+myStream = MyStreamListener(consumer_key=CONSUMER_KEY, consumer_secret=CONSUMER_SECRET,
+                            access_token=ACCESS_TOKEN, access_token_secret=ACCESS_SECRET)
 myStream.filter(track=[hashtag], languages=["en"])
