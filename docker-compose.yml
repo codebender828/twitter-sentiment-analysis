@@ -84,14 +84,6 @@ services:
     depends_on:
       - elasticsearch
 
-  # spark:
-  #   build:
-  #     context: spark
-  #   networks:
-  #     - elk
-  #   depends_on:
-  #     - elasticsearch
-
 networks:
   elk:
     driver: bridge
